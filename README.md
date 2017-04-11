@@ -55,15 +55,6 @@ docker run -it --rm -p 8888:8888 -v $(pwd)/:/home/<your netid>/work jupyter/all-
 ```
 Enter the URL that pops up in your terminal into a browser, and you should be good to go.
 
-
-## Start interactive jupyter notebook
-
-```bash
-jupyter notebook
-```
-and proceed to complete each of the pre-exercises one by one.
-
-
 ## Additional installations
 
 First, ensure you got the right version of jupyter and Java by typing: 
@@ -121,3 +112,10 @@ Finally, add some external dependencies to Apache Toree:
 ```bash
 echo spark.jars.packages=org.diana-hep:histogrammar_2.11:1.0.4,org.diana-hep:histogrammar-sparksql_2.11:1.0.4,org.diana-hep:histogrammar-bokeh_2.11:1.0.4 | sudo tee -a $SPARK_HOME/conf/spark-defaults.conf
 ```
+
+## Start interactive jupyter notebook
+
+```bash
+jupyter notebook
+```
+and proceed to complete each of the pre-exercises one by one.
