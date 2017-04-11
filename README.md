@@ -117,4 +117,7 @@ Available kernels:
 
 Next launch of `jupyter notebook` will give you an option to choose Apache Toree kernel from the upper right menu, which supports Scala and Spark.
 
-Finally, add some external dependencies to Apache Toree.
+Finally, add some external dependencies to Apache Toree:
+```bash
+echo spark.jars.packages=org.diana-hep:histogrammar_2.11:1.0.4,org.diana-hep:histogrammar-sparksql_2.11:1.0.4,org.diana-hep:histogrammar-bokeh_2.11:1.0.4 | sudo tee -a $SPARK_HOME/conf/spark-defaults.conf
+```
